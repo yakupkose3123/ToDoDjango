@@ -10,11 +10,12 @@
   <body>
     <h1>
       <hr />
-      <center>TO DO APP </center>
-      <hr />
+      <center>TO DO APP </center>      
     </h1>
-    <a href="{% url 'home' %}">HOME</a>
-
+    <div>
+      <a href="{% url 'home' %}"> <h3>HOME</h3></a>
+    </div>
+    <hr />
     {% block content %} 
     {# Add some content here on your pages! #}
     {% endblock content %}

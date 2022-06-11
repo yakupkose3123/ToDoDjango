@@ -1,15 +1,15 @@
-{% extends 'app/base.html' %} {% block content %}
+{% extends 'app/base.html' %} 
 
-<h2>To Do List</h2>
+
+{% block content %}
+
+<h2>TODO LIST</h2>
 
 <ul>
   {% for todo in todos %}
   <a href="{% url 'detail' todo.id  %}">
-    <div> 
       <li>{{todo.title}} - 
-      {{todo.isCompleted}} </li>
-    </div>
-    
+      {{todo.isCompleted}} </li>    
   </a>
   {% endfor %}
 </ul>

@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<h2>To Do Add</h2>
+<h2>TODO ADD</h2>
 
 <form action="" method="POST" enctype="multipart/form-data">
   {% csrf_token %} 
   
   {{form.as_p}}
 
-  <input type="submit" value="Add" />
+  <input type="submit" value="ADD" />
 </form>
 
 {% endblock content %}

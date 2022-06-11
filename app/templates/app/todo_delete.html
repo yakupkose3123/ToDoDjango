@@ -7,11 +7,11 @@
   <form action="" , method="POST">
     {% csrf_token %} 
     
-    Are you sure delete {{todo}}?<br />
-    <input type="submit" value="Yes" />
+    Are you sure delete {{todo.title}}?<br />
+    <input type="submit" value="YES" />
   </form>
 
-  <a href="{% url 'list'%}"> <button>No</button></a>
+  <a href="{% url 'list'%}"> <button>NO</button></a>
 </div>
 
 {% endblock content %}

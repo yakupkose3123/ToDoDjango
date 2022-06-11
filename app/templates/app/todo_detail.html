@@ -6,12 +6,19 @@
 <div>{{todo.title}}</div>
 <div>{{todo.description}}</div>
 <div>{{todo.priority}}</div>
-<div>{{todo.isCompleted}}</div>
-<div>{{todo.update_date}}</div>
+<div>ISCOMPLİTED : {{todo.isCompleted}}</div>
+<div>CREATE DATE : {{todo.create_date}}</div>
+<div>UPDATE DATE : {{todo.update_date}}</div>
+<br>
+<hr>
 
 <div>
-  <a href="{% url 'update' todo.id %}">Edit</a>
-  <a href="{% url 'delete' todo.id %}">Delete</a>
+  <button>
+    <a href="{% url 'update' todo.id %}">Edit</a>
+  </button>
+  <button>
+    <a href="{% url 'delete' todo.id %}">Delete</a>
+  </button>
 </div>
 
 {% endblock content %}
