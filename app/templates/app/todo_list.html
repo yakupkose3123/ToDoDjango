@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %} {% block content %}
+
+<h2>To Do List</h2>
+
+<ul>
+  {% for todo in todos %}
+  <a href="{% url 'detail' todo.id  %}">
+    <li>{{todo.title}} - {{todo.isCompleted}} - {{todo.update_date}}</li>
+  </a>
+  {% endfor %}
+</ul>
+{% endblock content %}
