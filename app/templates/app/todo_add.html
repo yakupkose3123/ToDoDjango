@@ -1,8 +1,9 @@
 {% extends 'app/base.html' %} 
 
 {% block content %}
-
+<center>
 <h2>TODO ADD</h2>
+<hr>
 
 <form action="" method="POST" enctype="multipart/form-data">
   {% csrf_token %} 
@@ -11,5 +12,5 @@
 
   <input type="submit" value="ADD" />
 </form>
-
+</center>
 {% endblock content %}

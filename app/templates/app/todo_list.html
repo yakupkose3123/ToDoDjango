@@ -2,15 +2,17 @@
 
 
 {% block content %}
+<center><h2>TODO LIST</h2> </center>
 
-<h2>TODO LIST</h2>
+
+<hr>
 
 <ul>
   {% for todo in todos %}
   <a href="{% url 'detail' todo.id  %}">
-      <li>{{todo.title}} - 
-      {{todo.isCompleted}} </li>    
+      <li>{{todo.title}} </li>    
   </a>
   {% endfor %}
 </ul>
+
 {% endblock content %}
