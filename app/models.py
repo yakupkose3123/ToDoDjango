@@ -3,17 +3,17 @@ from django.db import models
 class Todo(models.Model):
 
     PRIORITY_OPTIONS = [
-        ("UI", "URGENT / IMPORTANT"),
-        ("UN", "URGENT / NOT-IMPORTANT"),
-        ("NI", "NOT-URGENT / IMPORTANT"),
-        ("NN", "NOT-URGENT / NOT-IMPORTANT"),
+        ("1", "HIGH"),
+        ("2", "MEDIUM"),
+        ("3", "LOW"),
+       
     ]
 
     title = models.CharField(max_length=60)
-    discription = models.TextField(null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
     priority = models.CharField(max_length=3, choices = PRIORITY_OPTIONS,default="UI")
     isCompleted = models.BooleanField()
-    # create_date =models.DateTimeField()
+    create_date =models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(auto_now=True)
 
 
