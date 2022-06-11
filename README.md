@@ -1,35 +1,72 @@
-# ToDoDjango
+<!-- Please update value in the {}  -->
+
+<h1 align="center">TODO App</h1>
 
 
-BackEnd Assignment
-Clarusway
-Subject: Django CRUD Operations Assignment
-Learning Goal
-Practice Django to implement CRUD (Create, Read, Update, Delete) operations.
-Introduction
-In this assignment, you will create a "TODO" Django app.
-The root url will be a Todo form. Users can submit a new todo using this form.
-After submission, the user will be linked to "list" page. Or they can go to the list page with a direct
-link.
-In list page, users will see the "Title", "Description", "Priority", and "isCompleted" of the TODO. Here
-there will be "Add New", "Update", and "Delete" buttons.
-"Add New" will go to the "TODO" form.
-"Update" will go to the related TODO filled form, which can be updated.
-"Delete" will erase the related TODO, and continue to show the list page.
-Model
-In this project, you need to create a TODO model with fields:
-title
-description
-priority
-isCompleted
-updated_date
-created_date
-You can use choices option with priority.
-Form
-In this project, you need to create a forms.py file including TODO form using TODO model.
-Views
-In this project, you need to create four views:
-todo_list # To read all TODO objects on the template.
-todo_add # Including TODO form, to create TODO object.
-todo_update # Including TODO form, to update TODO object.
-todo_delete # To delete a TODO object.
+<div align="center">
+  <h3>
+    <a href="https://{your-demo-link.your-domain}">
+      Demo
+    </a>
+     | 
+    <a href="https://{your-url-to-the-solution}">
+      Project
+    </a>
+ 
+  </h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- HTML
+- CSS
+- Django
+
+## How To Use
+
+<!-- This is an example, please update according to your application -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) 
+```bash
+# Clone this repository
+$ git clone https://github.com/aaron-clarusway/django-todo-app_ch10.git
+
+# Install dependencies
+    $ python -m venv env
+    > env/Scripts/activate (for win OS)
+    $ source env/bin/activate (for macOs/linux OS)
+    $ pip install -r requirements.txt
+
+# Run the app
+$ python manage.py runserver
+```
+
+## Acknowledgements
+- Information for your projects
+
+## Contact
+
+
+- GitHub [@your-username](https://{github.com/yakupkose3123})
+
+- Linkedin [@your-linkedin](https://{linkedin.com/yakup-kose})
+
