@@ -10,7 +10,7 @@ urlpatterns = [
    # path('update/<int:pk>/', TodoUpdateView.as_view(), name="update"),
    # path('delete/<int:pk>/', TodoDeleteView.as_view(), name="delete"),
 
-   #! FUNTİONAL BASED VIEWS
+   #! FUNCTİONAL BASED VIEWS
    path('', home,  name="home"),
    path('list/', todo_list,  name="list"),   
    path('add/', todo_create, name="add"), 
